@@ -16,6 +16,13 @@
     "url": "https://github.com/bqanderson/smart-goals/issues"
   },
   "homepage": "https://github.com/bqanderson/smart-goals#readme",
+  "_moduleAliases": {
+    "@root": ".",
+    "@SmartGoals": "./services/SmartGoalsAPI",
+    "@SmartGoalsModels": "./services/SmartGoalsAPI/app/models",
+    "@SmartGoalsAPI": "./services/SmartGoalsAPI/config/app.js",
+    "@config": "./services/SmartGoalsAPI/config/index.js"
+  },
   "dependencies": {
     "bcrypt": "^2.0.0",
     "body-parser": "^1.18.2",
