@@ -3,7 +3,7 @@ const mongoose = require('mongoose'),
       ExtractJWT = PassportJWT.ExtractJwt,
       Strategy = PassportJWT.Strategy,
       config = require('./index.js'),
-      models = require('@SmartGoalsAPI/app/setup');
+      models = require('@SmartGoals/app/setup');
 
 module.exports = (passport) => {
   const User = models.User;
