@@ -20,4 +20,8 @@ app.use(passport.initialize());
 
 app.set('smartsecret', config.secret);
 
+cosign({ cwd: 'services' })
+  .include('SmartGoalsAPI/app/setup')
+  .then('SmartGoalsAPI/app/api')
+
 module.exports = app;
